@@ -1,0 +1,131 @@
+{
+    "applicationProperties": {
+        "viewing": {
+            "basemapGallery": {
+                "enabled": true
+            },
+            "measure": {
+                "enabled": true
+            },
+            "routing": {
+                "enabled": true
+            }
+        }
+    },
+    "authoringApp": "WebMapViewer",
+    "authoringAppVersion": "9.4",
+    "baseMap": {
+        "baseMapLayers": [
+            {
+                "id": "VectorTile_2846",
+                "layerType": "VectorTileLayer",
+                "opacity": 1,
+                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json",
+                "title": "Dark Gray Base",
+                "type": "VectorTileLayer",
+                "visibility": true
+            },
+            {
+                "id": "VectorTile_1645",
+                "isReference": true,
+                "layerType": "VectorTileLayer",
+                "opacity": 0,
+                "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json",
+                "title": "Dark Gray Reference",
+                "type": "VectorTileLayer",
+                "visibility": true
+            }
+        ],
+        "title": "Dark Gray Canvas"
+    },
+    "operationalLayers": [
+        {
+            "disablePopup": true,
+            "id": "wojewodztwa_nonpl_488",
+            "itemId": "5478ea38fc8b4382a28dbd9645b36326",
+            "layerDefinition": {
+                "maxScale": 313,
+                "minScale": 25000000
+            },
+            "layerType": "ArcGISFeatureLayer",
+            "opacity": 1,
+            "title": "woje_nonpl",
+            "url": "https://services2.arcgis.com/MzCtPDSne0rpIt7V/arcgis/rest/services/wojewodztwa_nonpl/FeatureServer/0",
+            "visibility": true
+        },
+        {
+            "id": "MB_195",
+            "itemId": "ce8d3898df3c4eadb2f830d61073f6c5",
+            "layerDefinition": {
+                "drawingInfo": {
+                    "renderer": {
+                        "authoringInfo": {
+                            "visualVariables": [
+                                {
+                                    "maxSliderValue": 776,
+                                    "minSliderValue": 63,
+                                    "type": "sizeInfo"
+                                }
+                            ]
+                        },
+                        "classBreakInfos": [
+                            {
+                                "classMaxValue": 9007199254740991,
+                                "symbol": {
+                                    "angle": 0,
+                                    "color": [
+                                        255,
+                                        0,
+                                        0,
+                                        255
+                                    ],
+                                    "outline": {
+                                        "color": [
+                                            255,
+                                            255,
+                                            255,
+                                            64
+                                        ],
+                                        "style": "esriSLSSolid",
+                                        "type": "esriSLS",
+                                        "width": 0.75
+                                    },
+                                    "size": 9,
+                                    "style": "esriSMSCircle",
+                                    "type": "esriSMS",
+                                    "xoffset": 0,
+                                    "yoffset": 0
+                                }
+                            }
+                        ],
+                        "field": "liczba_przypadkow",
+                        "minValue": -9007199254740991,
+                        "type": "classBreaks",
+                        "visualVariables": [
+                            {
+                                "field": "liczba_przypadkow",
+                                "maxDataValue": 776,
+                                "maxSize": 37.5,
+                                "minDataValue": 63,
+                                "minSize": 6,
+                                "type": "sizeInfo",
+                                "valueExpression": null,
+                                "valueUnit": "unknown"
+                            }
+                        ]
+                    }
+                }
+            },
+            "layerType": "ArcGISFeatureLayer",
+            "opacity": 0.8,
+            "title": "PL_COVID_DATA",
+            "url": "https://services2.arcgis.com/MzCtPDSne0rpIt7V/arcgis/rest/services/MB/FeatureServer/0",
+            "visibility": true
+        }
+    ],
+    "spatialReference": {
+        "latestWkid": 3857,
+        "wkid": 102100
+    },
+    "version": "2.23"
+}
